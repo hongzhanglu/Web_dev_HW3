@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#about h2, #contact h2 {
+    margin-bottom: 20px;
+}
+
+.btn-light {
+    border: 2px solid #fff;
+}
+
+footer {
+    margin-top: 40px;
+}

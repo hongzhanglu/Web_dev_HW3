@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginner Bootstrap Website</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="hw_3.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Fun Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5" id="home">
+        <div class="container">
+            <h1>Welcome to My Fun Website!</h1>
+            <p>Learning Bootstrap, HTML, CSS, and JavaScript is fun and easy!</p>
+            <button class="btn btn-light mt-3" onclick="changeGreeting()">Click Me!</button>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <p class="lead">I am a beginner learning how to create beautiful websites with Bootstrap, along with skills in various programming languages and tools.</p>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <i class="fas fa-code fa-3x mb-3"></i>
+                    <h4>HTML & CSS</h4>
+                    <p>I use HTML to structure my web pages and CSS to design and style them, making websites visually appealing and user-friendly.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h4>JavaScript</h4>
+                    <p>JavaScript allows me to add interactivity to my websites, making them dynamic and responsive to user actions.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-python fa-3x mb-3"></i>
+                    <h4>Python</h4>
+                    <p>I have experience with Python for scripting, data analysis, and automation. It is a powerful language that enhances my backend development skills.</p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <i class="fas fa-code-branch fa-3x mb-3"></i>
+                    <h4>C++</h4>
+                    <p>C++ is my go-to language for understanding computer science fundamentals, including data structures and algorithms, which helps me write efficient code.</p>
+                </div>
+                <div class="col-md-4 mt-4">
+                    <i class="fas fa-project-diagram fa-3x mb-3"></i>
+                    <h4>Problem Solving</h4>
+                    <p>Working with multiple programming languages helps me develop problem-solving skills, enabling me to tackle complex coding challenges effectively.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <form class="row g-3 mt-4">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Fun Website | All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="hw_3.js"></script>
+</body>
+</html>
